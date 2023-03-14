@@ -1,3 +1,36 @@
-*{
-    background-color: red;
+html, body {
+    height: 100%;
+    margin: 0;
+  }
+.content{
+    height: 100%;
+    width: 100%;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 500px);
+}
+
+.photo{
+height: 500px;
+background-color: aqua;
+}
+.textC{
+height: 500px;
+background-color: red;
+display: grid;
+grid-template-rows: repeat(3, 166px);
+}
+.about{
+  
+    border: 1px solid black;
+}
+.openHours{
+    
+    border: 1px solid black;
+}
+.location{
+    
+    border: 1px solid black;
 }
