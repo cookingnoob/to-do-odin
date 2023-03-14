@@ -1,30 +1,19 @@
 import './style.css';
+import {content, photo, about, openHours, location} from './home.js'
+//crear header para contener home, menu y about
 
-const content = document.querySelector('.content');
-
-
-const photo = createDivClass("photo");
-content.appendChild(photo);
-const textC = createDivClass("textC");
-content.appendChild(textC);
-const about = createDivClass("about");
-textC.appendChild(about);
-const openHours = createDivClass("openHours");
-textC.appendChild(openHours);
-const location = createDivClass("location");
-textC.appendChild(location)
+//crear otro div que contenga estos elementos
 
 
-function createDivClass(className){
-    let div = document.createElement('div');
-    div.classList.add(className);
-    return div
-}
+//crear footer con mi nombre
 
-//clases:
-    //content es la que existe en el html
-    // photo
-    // textC
-    // about
-    // openHours
-    // location
+
+
+
+// para martes 14 de marzo falta:
+    //crear documentos para cada parte de la pagina
+    // crear un nuevo archivo
+    //copiar este codigo
+    //¿Como se importa?
+    //crear los otros dos
+    //como se hace el brinco de uno a otro?
