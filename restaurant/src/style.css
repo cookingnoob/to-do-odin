@@ -44,3 +44,19 @@ grid-template-rows: repeat(3, 166px);
     width: 100px;
     border: 1px solid black;
 }
+
+.info{
+    height: 300px;
+    border: 1px solid black;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+}
+.infoT{
+
+}
+.infoP{
+    border: 1px solid black;
+    height: 150px;
+    width: 400px;
+}

@@ -1,10 +1,7 @@
 import './style.css';
 import {createHome, createDivClass} from './home.js'
 import createMenu from './menu';
-
-const content = document.getElementById('content'); 
-
-
+import createAbout from './about';
 
 
 // para miercoles 15 de marzo falta:
@@ -20,5 +17,7 @@ const content = document.getElementById('content');
                 // const menu = createMenu();
                 // document.body.appendChild(menu)
 
-        //pagina de about
+                // const about = createAbout();
+                // document.body.appendChild(about);
+      
         //footer con mi nombre
