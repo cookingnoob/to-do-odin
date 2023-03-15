@@ -3,6 +3,13 @@ import {createHome, createDivClass} from './home.js'
 import createMenu from './menu';
 import createAbout from './about';
 
+const header = createDivClass('header');
+const footer = createDivClass('footer');
+document.body.append(header, footer);
+
+const homeBtn = document.createElement('button');
+homeBtn.classList.add('homeBtn')
+header.appendChild(homeBtn);
 
 // para miercoles 15 de marzo falta:
     //crear:

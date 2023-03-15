@@ -1,5 +1,7 @@
 import { createDivClass } from "./home";
+
 const content = document.getElementById('content');
+
 function createMenu (){ 
     let menuItems = []
 for(let i = 0; i < 5; i++){

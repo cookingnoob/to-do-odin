@@ -2,16 +2,37 @@ html, body {
     height: 100%;
     margin: 0;
   }
+body{
+display: grid;
+grid-template-rows: 1fr 8fr 1fr;
+}
+.header{
+    position: relative;
+    background-color: beige;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #content{
-    height: 100%;
-    width: 100%;
+    background-color: rgb(86, 86, 123);
     border: 1px solid black;
     display: grid;
     justify-content: center;
     align-items: center;
     grid-template-columns: repeat(2, 500px);
 }
+.footer{
+    background-color: yellow;
+    border: 1px solid black;
+}
+.homeBtn{
+    height: 50px;
+    width: 300px;
+    position: relative;
+    top: -410px;
 
+}
 .photo{
 height: 500px;
 background-color: aqua;
