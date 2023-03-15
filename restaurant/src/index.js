@@ -1,19 +1,24 @@
 import './style.css';
-import {content, photo, about, openHours, location} from './home.js'
-//crear header para contener home, menu y about
+import {createHome, createDivClass} from './home.js'
+import createMenu from './menu';
 
-//crear otro div que contenga estos elementos
-
-
-//crear footer con mi nombre
+const content = document.getElementById('content'); 
 
 
 
 
-// para martes 14 de marzo falta:
-    //crear documentos para cada parte de la pagina
-    // crear un nuevo archivo
-    //copiar este codigo
-    //¿Como se importa?
-    //crear los otros dos
-    //como se hace el brinco de uno a otro?
+// para miercoles 15 de marzo falta:
+    //crear:
+        //header con botones que creen un area de la pagina
+            //como se hace el brinco de uno a otro?
+            //el div content debe tener el id #content
+            //para que tenga diferentes clases por cada pagina
+            //puede ser logica del boton para llamar al contenido
+                // const content = createHome();
+                // document.body.appendChild(content);
+
+                // const menu = createMenu();
+                // document.body.appendChild(menu)
+
+        //pagina de about
+        //footer con mi nombre

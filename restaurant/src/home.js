@@ -1,5 +1,6 @@
-const content = document.querySelector('.content');
+const content = document.getElementById('content');
 
+function createHome(){
 const photo = createDivClass("photo");
 content.appendChild(photo);
 
@@ -14,6 +15,14 @@ const openHours = createDivClass("openHours");
 textC.appendChild(openHours);
 const location = createDivClass("location");
 textC.appendChild(location);
+return{
+    photo,
+    textC,
+    about,
+    openHours,
+    location
+};
+};
 
 function createDivClass(className){
     let div = document.createElement('div');
@@ -21,4 +30,4 @@ function createDivClass(className){
     return div
 }
 
-export {content, photo, about, openHours, location};
+export {createHome, createDivClass}
