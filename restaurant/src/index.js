@@ -11,6 +11,11 @@ const homeBtn = document.createElement('button');
 homeBtn.classList.add('homeBtn')
 header.appendChild(homeBtn);
 
+homeBtn.onclick = function() {
+    const content = createHome();
+    document.body.appendChild(content);
+}
+
 // para miercoles 15 de marzo falta:
     //crear:
         //header con botones que creen un area de la pagina
@@ -18,8 +23,7 @@ header.appendChild(homeBtn);
             //el div content debe tener el id #content
             //para que tenga diferentes clases por cada pagina
             //puede ser logica del boton para llamar al contenido
-                // const content = createHome();
-                // document.body.appendChild(content);
+                
 
                 // const menu = createMenu();
                 // document.body.appendChild(menu)
