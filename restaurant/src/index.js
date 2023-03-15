@@ -8,12 +8,33 @@ const footer = createDivClass('footer');
 document.body.append(header, footer);
 
 const homeBtn = document.createElement('button');
-homeBtn.classList.add('homeBtn')
-header.appendChild(homeBtn);
+homeBtn.classList.add('headerBtn');
+homeBtn.textContent = 'Home';
+
+const menuBtn = document.createElement('button');
+menuBtn.classList.add('headerBtn');
+menuBtn.textContent = 'Menu';
+
+const aboutBtn = document.createElement('button');
+aboutBtn.classList.add('headerBtn');
+aboutBtn.textContent = 'About';
+
+header.append(homeBtn, menuBtn, aboutBtn);
 
 homeBtn.onclick = function() {
     const content = createHome();
     document.body.appendChild(content);
+};
+
+menuBtn.onclick = function(){
+    const menu = createMenu();
+    document.body.appendChild(menu)
+};
+
+aboutBtn.onclick = function(){
+
+  const about = createAbout();
+  document.body.appendChild(about);
 }
 
 // para miercoles 15 de marzo falta:
@@ -25,10 +46,7 @@ homeBtn.onclick = function() {
             //puede ser logica del boton para llamar al contenido
                 
 
-                // const menu = createMenu();
-                // document.body.appendChild(menu)
+                
 
-                // const about = createAbout();
-                // document.body.appendChild(about);
       
         //footer con mi nombre

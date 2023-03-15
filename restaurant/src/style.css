@@ -26,7 +26,7 @@ grid-template-rows: 1fr 8fr 1fr;
     background-color: yellow;
     border: 1px solid black;
 }
-.homeBtn{
+.headerBtn{
     height: 50px;
     width: 300px;
     position: relative;
