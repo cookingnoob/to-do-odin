@@ -1,1 +1,1 @@
-console.log("hola");
+(()=>{console.log("e");class o{constructor(o,e){this.title=o,this.notes=e}}const e=[],n=new o("prueba","nueva prueba"),s=new o("prueba 2","ver como funciona");e.push(n,s),console.log(e)})();
