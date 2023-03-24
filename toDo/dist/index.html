@@ -16,12 +16,17 @@
 //checklist
 //estar dentro de un proyecto o listas separadas 
 -->
-<form action="">
-    <label for="title"></label>
-    <input type="text">
+<form action="" id="container">
+    <div class="formField">
+        <label for="title">Title: </label>
+        <input type="text" name="title" id="title">
+    </div>
 
-    <label for="date">Date: </label>
-    
+    <div class="formField">
+        <label for="notes">Notes: </label>
+        <input type="text" name="notes" id="notes">
+    </div>
+    <button type="submit" id="submit">Submit</button>
 </form>
 
     <script src="./main.js"></script>
