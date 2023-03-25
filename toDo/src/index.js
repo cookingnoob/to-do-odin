@@ -1,27 +1,4 @@
-import { titleInput, submitBtn, prueba } from "./DOM"
-
-submitBtn.addEventListener('click', getInputValues)
-
-function getInputValues(event){
-    event.preventDefault()
-    let newTitle = titleInput.value;
-    console.log(newTitle)
-}
-
-// function submitClick(event){ 
-//  const newTitle = titleInput.value;
-//  const newNotes = notesInput.value;
-//  console.log(`${newTitle} ${newNotes}`)
-// };
-
-
-
-
-
-
-
-
-
+import { generalTodo, getInputValues } from "./submit";
 
 
 

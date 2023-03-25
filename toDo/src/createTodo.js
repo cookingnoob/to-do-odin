@@ -1,23 +1,21 @@
+// se tiene que exportar el constructor para poder crear la clase en el submit
+// 
 
+const generalTodo = [];
 
-const container = document.getElementById('container');
-let titleInput = document.getElementById('title');
-let notesInput = document.getElementById('notes');
-let submitBtn = document.getElementById('submit');
-let inputs = document.querySelectorAll('input');
-let newTitle;
-let newNotes;
-
-submitBtn.addEventListener('click', submitClick);
-
-function submitClick(event){ 
-    event.preventDefault();
-    newTitle = titleInput.value;
-    newNotes = notesInput.value;
-    const formTodo = new Todo (newTitle, newNotes);
-    return {
-        formTodo
+export class Todo {
+    constructor (title, notes){
+        this.title = title;
+        this.notes = notes;
     }
-};
+}
 
-export {submitClick};
+
+const prueba1 = new Todo ('prueba', 'nueva prueba');
+const prueba2 = new Todo ('prueba 2', 'ver como funciona')
+
+generalTodo.push(prueba1, prueba2);
+
+
+
+

@@ -5,11 +5,7 @@ let notesInput = document.getElementById('notes');
 let submitBtn = document.getElementById('submit');
 let inputs = document.querySelectorAll('input');
 
-function prueba (event){
-    event.preventDefault()
-    console.log('prueba')
-}
-
-export {prueba, titleInput, submitBtn}
+export {notesInput, titleInput, submitBtn}
 //render elements
-
+    //metodo para crear elementos con clase
+    //append child al contenedor
