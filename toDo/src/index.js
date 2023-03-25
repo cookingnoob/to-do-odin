@@ -1,3 +1,4 @@
+import css from "./style.css";
 import { generalTodo, getInputValues } from "./submit";
 
 
