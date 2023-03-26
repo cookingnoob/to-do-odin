@@ -1,6 +1,19 @@
 import css from "./style.css";
-import { generalTodo, getInputValues } from "./submit";
 
+//de submit.js
+import { notesInput, titleInput, submitBtn } from "./DOM";
+import { generalTodo, Todo } from "./createTodo";
+
+submitBtn.addEventListener('click', getInputValues);
+
+function getInputValues(event){
+    event.preventDefault()
+    let newTitle = titleInput.value;
+    let newNotes = notesInput.value;
+    const dynamicTodo = new Todo (newTitle, newNotes);
+    generalTodo.push(dynamicTodo);
+    console.log(generalTodo);
+}
 
 
 //1 DOM va a exportar a popUp el metodo de seleccionar el boton +

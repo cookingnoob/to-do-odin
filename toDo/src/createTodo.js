@@ -1,7 +1,8 @@
 // se tiene que exportar el constructor para poder crear la clase en el submit
-// 
+import { getValues,  } from "./submit";
 
-const generalTodo = [];
+
+export const generalTodo = [];
 
 export class Todo {
     constructor (title, notes){
