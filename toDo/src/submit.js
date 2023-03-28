@@ -6,7 +6,7 @@ import { generalTodo, Todo } from "./createTodo";
 submitBtn.addEventListener('click', getInputValues);
 
 function getInputValues(event){
-    event.preventDefault()
+    event.preventDefault();
     let newTitle = titleInput.value;
     let newNotes = notesInput.value;
     const dynamicTodo = new Todo (newTitle, newNotes);

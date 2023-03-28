@@ -1,19 +1,25 @@
 import css from "./style.css";
+import { prueba1, prueba2 } from "./createTodo";
 
-//de submit.js
-import { notesInput, titleInput, submitBtn } from "./DOM";
-import { generalTodo, Todo } from "./createTodo";
+function createElementClass(newClass){
+    const newElement = document.createElement('div');
+    newElement.classList.add(newClass);
+    };
 
-submitBtn.addEventListener('click', getInputValues);
+prueba1.createElementClass('toDo');
 
-function getInputValues(event){
-    event.preventDefault()
-    let newTitle = titleInput.value;
-    let newNotes = notesInput.value;
-    const dynamicTodo = new Todo (newTitle, newNotes);
-    generalTodo.push(dynamicTodo);
-    console.log(generalTodo);
-}
+
+
+
+
+//     6. Piezas de la web
+//         1. Header
+//         2. Side bar con la lista de arrays y el boton para crearlos
+//         3. Container para mostrar la lista de todos y un boton para crearlos
+//             1. Cada todo tiene un circulo de checkbox, un titular y un renglon de notas
+//             2. El formulario aparece, pone una cortinilla gris para resaltar y cuando picas enviar desaparece
+//    
+    
 
 
 //1 DOM va a exportar a popUp el metodo de seleccionar el boton +

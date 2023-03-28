@@ -7,5 +7,9 @@ let inputs = document.querySelectorAll('input');
 
 export {notesInput, titleInput, submitBtn}
 //render elements
-    //metodo para crear elementos con clase
-    //append child al contenedor
+    //if (no hay arrays creados, se usa general){
+        //forEach element in array:
+            //crea elementos y darles clase
+            //append child al contenedor
+    //} else if {se hace lo mismo, pero solo pasa un array en particular}
+   
