@@ -1,7 +1,9 @@
 import css from "./style.css";
 import { renderElements } from "./DOM";
 import { clickNewToDo, closePopUpToDo } from "./popUpForm";
+import { renderTDList } from "./createTodo";
 
+renderTDList()
 clickNewToDo()
 closePopUpToDo()
 
