@@ -1,9 +1,9 @@
 import css from "./style.css";
 import { renderElements } from "./DOM";
-import { clickNewToDo } from "./popUpForm";
+import { clickNewToDo, closePopUpToDo } from "./popUpForm";
 
 clickNewToDo()
-
+closePopUpToDo()
 
 
 //para el render del todo necesito
