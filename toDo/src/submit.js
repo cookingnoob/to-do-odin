@@ -2,6 +2,7 @@
 // toma esos inputs y los pasa como parametros a la clase to do
 import { notesInput, titleInput, submitBtn } from "./DOM";
 import { generalTodo, Todo } from "./createTodo";
+import { renderToDo } from "./DOM";
 
 submitBtn.addEventListener('click', getInputValues);
 
@@ -11,6 +12,7 @@ function getInputValues(event){
     let newNotes = notesInput.value;
     const dynamicTodo = new Todo (newTitle, newNotes);
     generalTodo.push(dynamicTodo);
+    renderToDo(dynamicTodo)
 }
 
 
