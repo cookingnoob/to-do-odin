@@ -1,10 +1,8 @@
 import css from "./style.css";
 import { renderElements } from "./DOM";
-// const header = createElementClass('header');
-// const sidebar = createElementClass('sidebar');
-// const content = createElementClass('content');
-// const footer = createElementClass('footer');
+import { clickNewToDo } from "./popUpForm";
 
+clickNewToDo()
 
 
 
