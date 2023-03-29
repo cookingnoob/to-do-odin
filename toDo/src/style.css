@@ -1,6 +1,35 @@
 *{
-    background-color: aqua;
+    
 }
+body{
+display: grid;
+grid-template-rows: 1fr 5fr 1fr;
+grid-template-columns: 1fr 5fr;
+grid-template-areas: "header header"
+                     "sidebar content"
+                     "footer footer" ;
+}
+.header{
+border: 1px solid black;
+height: 100px;
+grid-area: header;
+}
+.content{
+    border: 1px solid black;
+grid-area: content;
+}
+.container{
+
+}
+.sidebar{
+    border: 1px solid black;
+    grid-area: sidebar;
+}
+.footer{
+    border: 1px solid black;
+grid-area: footer;
+}
+
 
 /* 7. Clases por crear
 //         * Header

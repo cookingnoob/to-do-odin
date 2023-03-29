@@ -1,24 +1,27 @@
 import css from "./style.css";
-import { prueba1, prueba2 } from "./createTodo";
-
-function createElementClass(newClass){
-    const newElement = document.createElement('div');
-    newElement.classList.add(newClass);
-    };
-
-prueba1.createElementClass('toDo');
+import { renderElements } from "./DOM";
+// const header = createElementClass('header');
+// const sidebar = createElementClass('sidebar');
+// const content = createElementClass('content');
+// const footer = createElementClass('footer');
 
 
 
 
+//para el render del todo necesito
+    //append child a container
+    //crear un contenedor de todo el to do
+    //espacio para el titulo
+    //espacio para la nota
+    //espacio para el checkbox
+    //que se append al contendor del to do
 
-//     6. Piezas de la web
-//         1. Header
-//         2. Side bar con la lista de arrays y el boton para crearlos
-//         3. Container para mostrar la lista de todos y un boton para crearlos
-//             1. Cada todo tiene un circulo de checkbox, un titular y un renglon de notas
-//             2. El formulario aparece, pone una cortinilla gris para resaltar y cuando picas enviar desaparece
-//    
+
+
+
+
+
+
     
 
 
