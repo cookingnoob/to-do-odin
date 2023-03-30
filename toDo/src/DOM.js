@@ -1,8 +1,11 @@
 //form elements
 const container = document.getElementById('toDoFormcontainer');
+const arrayFormContainer = document.getElementById('arrayFormContainer');//A
 export let titleInput = document.getElementById('title');
 export let notesInput = document.getElementById('notes');
 export let submitBtn = document.getElementById('submit');
+export let projectName = document.getElementById('project');//A
+export let submitBtnA = document.getElementById('submitA'); //A for array
 let inputs = document.querySelectorAll('input');
 
 //render layout and general elements
@@ -17,6 +20,10 @@ footer.classList.add('footer');
 export const addNewToDo = document.createElement('button');
 addNewToDo.classList.add('openToDoForm')
 addNewToDo.textContent = 'New To Do';
+export const addNewArray = document.createElement('button');
+addNewArray.classList.add('openArrayForm')//A
+addNewArray.textContent = 'New Array';//A
+sidebar.append(addNewArray, arrayFormContainer);
 content.appendChild(container, addNewToDo);
 export const renderElements = document.body.append(header, content, sidebar, footer, addNewToDo);
 

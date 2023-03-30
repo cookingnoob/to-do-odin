@@ -39,8 +39,6 @@ grid-area: footer;
 }
 
 .toDoContainer{
-    height: 100px;
-    background-color: rebeccapurple;
 display: grid;
 grid-template-rows: repeat(2, 1fr);
 border: 1px solid black;
@@ -52,13 +50,20 @@ font-size: 12px;
 font-size: 8px;
 }
 
+.openArrayForm{
 
+}
+/* Formulario del array */
+#arrayFormContainer{
+    display: none; 
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
 /* 7. Clases por crear
-//         * Header
-//         * Container
-//         * Sidebar
-//         * Projects
-//         * Footer
+
 //         * CreateTodo -  boton
 //         * Formulario todo
 //             * Title

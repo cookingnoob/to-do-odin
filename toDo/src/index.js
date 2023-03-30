@@ -1,24 +1,21 @@
 import css from "./style.css";
 import { renderElements } from "./DOM";
-import { clickNewToDo, closePopUpToDo } from "./popUpForm";
+import { clickNewToDo, closePopUpToDo, clickNewProject, closeProjectPopUp} from "./popUpForm";
 import { renderTDList } from "./createTodo";
 
-renderTDList()
-clickNewToDo()
-closePopUpToDo()
+renderTDList();
+clickNewToDo();
+closePopUpToDo();
+clickNewProject();//A
+closePopUpToDo();//A
 
-
-//para el render del todo necesito
-    //append child a container
-    //crear un contenedor de todo el to do
-    //espacio para el titulo
-    //espacio para la nota
-    //espacio para el checkbox
-    //que se append al contendor del to do
-
-
-
-
+//trabajando en el formulario del newArray
+    //falta enlazar el pop up con el boton de new array
+    //que desaparezca con su submit
+    //que el input se guarde en una variable para llamar un nuevo array
+    //empujar ese array a general
+    // elementos de render del array
+    //logica de que cada array que picas muestra solo su contenido
 
 
 

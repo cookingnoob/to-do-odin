@@ -12,7 +12,7 @@ function getInputValues(event){
     let newNotes = notesInput.value;
     const dynamicTodo = new Todo (newTitle, newNotes);
     generalTodo.push(dynamicTodo);
-    renderToDo(dynamicTodo)
+    renderToDo(dynamicTodo);
 }
 
 
