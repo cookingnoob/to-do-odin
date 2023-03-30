@@ -1,8 +1,12 @@
+// el boton para agregar to do y el formulario de proyectos tiene de top 0 hasta arriba de la web
+//creo que es porque no se hizo bien el append
+
 //form elements
 const container = document.getElementById('toDoFormcontainer');
 const arrayFormContainer = document.getElementById('arrayFormContainer');//A
 export let titleInput = document.getElementById('title');
 export let notesInput = document.getElementById('notes');
+export let dueDate = document.getElementById('dueDate');
 export let submitBtn = document.getElementById('submit');
 export let projectName = document.getElementById('project');//A
 export let submitBtnA = document.getElementById('submitA'); //A for array

@@ -16,7 +16,7 @@ function closeForm() {
 
 
 //open and close project/arrays form
-//NO SIRVE
+
 export function clickNewProject(){
   addNewArray.addEventListener('click', openProjectForm);
 };

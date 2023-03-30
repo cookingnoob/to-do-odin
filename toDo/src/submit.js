@@ -14,7 +14,7 @@ function getInputValues(event){
     generalTodo.push(dynamicTodo);
     renderToDo(dynamicTodo);
 }
-submitBtnA.addEventListener('click', getProjectName)
+submitBtnA.addEventListener('click', getProjectName);
 
 function getProjectName(event){ 
 event.preventDefault();
