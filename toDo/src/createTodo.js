@@ -4,9 +4,10 @@ import { renderToDo } from "./DOM";
 export const generalTodo = [];
 
 export class Todo {
-    constructor (title, notes){
+    constructor (title, notes, dueDate){
         this.title = title;
         this.notes = notes;
+        this.dueDate = dueDate
     }
 };
 

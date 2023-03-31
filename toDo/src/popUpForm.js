@@ -6,17 +6,17 @@ export function clickNewToDo(){
 };
 export function closePopUpToDo(){
     submitBtn.addEventListener('click', closeForm);
-}
+};
 function openForm() {
   document.getElementById("toDoFormcontainer").style.display = "block";
 };
+
 function closeForm() {
   document.getElementById("toDoFormcontainer").style.display = "none";
 };
 
 
 //open and close project/arrays form
-
 export function clickNewProject(){
   addNewArray.addEventListener('click', openProjectForm);
 };
@@ -25,12 +25,9 @@ export function closeProjectPopUp(){
   submitBtnA.addEventListener('click', closeProjectForm);
 };
 
-
-
 function openProjectForm() {
     document.getElementById("arrayFormContainer").style.display = "block";
-  };
-  
+};
 function closeProjectForm() {
     document.getElementById("arrayFormContainer").style.display = "none";
-  };
+};

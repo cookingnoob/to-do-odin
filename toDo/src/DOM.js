@@ -37,19 +37,19 @@ export function renderToDo(todo){
     const toDoContainer = document.createElement('div');
     const toDoTitle = document.createElement('h3');
     const toDoNotes = document.createElement('p');
-    // const checkBox = document.createElement('div');
+    const checkBox = document.createElement('div');
     // const toDoDate = document.createElement('div');
 
     toDoContainer.classList.add('toDoContainer');
     toDoTitle.classList.add('toDoTitle');
     toDoNotes.classList.add('toDoNotes');
-    // checkBox.classList.add('checkBox');
+    checkBox.classList.add('checkBox');
     // toDoDate.classList.add('toDoDate');
 
     toDoTitle.textContent = `${todo.title}`;
     toDoNotes.textContent = `${todo.notes}`;
 
-    toDoContainer.append(toDoTitle, toDoNotes);
+    toDoContainer.append(toDoTitle, toDoNotes, checkBox);
     content.append(toDoContainer);
 
     return{

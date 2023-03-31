@@ -1,2 +1,4 @@
-//     4. Logica de fechas 
-//     8. Que se organicen en el array de acuerdo por fecha (creo que seria un array de filter o map para crear un nuevo array con el orden por fecha)
+//importar date-fns
+// tomar el valor que se pasa del input
+//transformar el a alguna funcion de date-fns
+//exportar esa funcion al DOM en el render del to do
