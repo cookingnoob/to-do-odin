@@ -1,3 +1,5 @@
+import { pruebaCheckBox } from "./checkTodo";
+
 // el boton para agregar to do y el formulario de proyectos tiene de top 0 hasta arriba de la web
 //creo que es porque no se hizo bien el append
 
@@ -44,6 +46,7 @@ export function renderToDo(todo){
     toDoTitle.classList.add('toDoTitle');
     toDoNotes.classList.add('toDoNotes');
     checkBox.classList.add('checkBox');
+    checkBox.addEventListener('click', pruebaCheckBox); //cambiarlo a toggle para que cambie de clase
     // toDoDate.classList.add('toDoDate');
 
     toDoTitle.textContent = `${todo.title}`;
@@ -57,5 +60,20 @@ export function renderToDo(todo){
     }
 }
 
+export function renderProject(){
+    const projectContainer = document.createElement('div');
+    const projectTitle = document.createElement('h3');
 
+    projectContainer.classList.add('projectContainer');
+    projectTitle.classList.add('projectTitle');
+
+    projectTitle.textContent = `${projectName.value}`;
+
+    projectContainer.append(projectTitle);
+    sidebar.append(projectContainer);
+
+    return{
+        projectContainer
+    }
+}
 
