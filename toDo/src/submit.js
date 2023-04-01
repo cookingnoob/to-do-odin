@@ -1,8 +1,6 @@
-// la logica que toma los input del formulario
-// toma esos inputs y los pasa como parametros a la clase to do
-import { notesInput, titleInput, submitBtn, projectName, submitBtnA, dueDate, renderProject } from "./DOM";
+import { notesInput, titleInput, submitBtn, projectName, submitBtnA, dueDate, renderProject, renderToDo } from "./DOM";
 import { generalTodo, Todo } from "./createTodo";
-import { renderToDo } from "./DOM";
+
 
 //creates a new to do when you click submit, it gets pushed to the generalTodo array
 submitBtn.addEventListener('click', getInputValues);
@@ -24,7 +22,6 @@ function getProjectName(event){
     let projectInput = projectName.value;
     [projectInput] = []
     generalTodo.push([projectInput]);
-    console.log(generalTodo);
-    renderProject([projectInput])
+    renderProject([projectInput]);
 }
 

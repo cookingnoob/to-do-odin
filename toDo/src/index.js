@@ -7,7 +7,7 @@ renderTDList();
 clickNewToDo();
 closePopUpToDo();
 clickNewProject();//A
-closePopUpToDo();//A
+closeProjectPopUp();//A
 
 //trabajando en el formulario del newArray
     //falta enlazar el pop up con el boton de new array
