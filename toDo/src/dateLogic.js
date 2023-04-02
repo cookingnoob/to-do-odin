@@ -1,4 +1,8 @@
+import { addDays } from 'date-fns';
+
+
 //importar date-fns
-// tomar el valor que se pasa del input
-//transformar el a alguna funcion de date-fns
-//exportar esa funcion al DOM en el render del to do
+// var differenceInCalendarDays = require('date-fns/differenceInCalendarDays')
+// differenceInCalendarDays(dateLeft, dateRight)
+//dateLeft va a ser la fecha que se pone en input
+//dateRight va a ser la fecha de hoy ¿como obtenerla?
