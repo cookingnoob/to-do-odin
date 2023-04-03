@@ -13,7 +13,7 @@ height: 100px;
 grid-area: header;
 }
 .content{
-background-color: aqua;
+background-color: whitesmoke;
 position: relative;
 border: 1px solid black;
 grid-area: content;
@@ -35,7 +35,8 @@ justify-content: center;
 .openToDoForm{
     /* new todo boton */
 height: 30px;
-background-color: rebeccapurple;
+background-color: yellow;
+color: black;
 position: absolute;
 top: 120px;
 left: 300px;

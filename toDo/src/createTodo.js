@@ -1,5 +1,5 @@
 import { getValues,  } from "./submit";
-import { renderToDo, renderProject } from "./DOM";
+import { renderToDo, renderDefaultProjects } from "./DOM";
 
 export const generalTodo = [];
 
@@ -22,4 +22,4 @@ export function renderTDList (){
     console.log(generalTodo);
 }
 
-renderProject(generalTodo);
+renderDefaultProjects(generalTodo, 'General');

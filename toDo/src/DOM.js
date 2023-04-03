@@ -77,3 +77,21 @@ export function renderProject(){
     }
 }
 
+export function renderDefaultProjects (array, name){
+
+    const projectContainer = document.createElement('div');
+    const projectTitle = document.createElement('h3');
+
+    projectContainer.classList.add('projectContainer');
+    projectTitle.classList.add('projectTitle');
+
+
+    projectTitle.textContent = `${name}`;
+
+    projectContainer.append(projectTitle);
+    sidebar.append(projectContainer);
+    return{
+        projectContainer
+    }
+}
+
