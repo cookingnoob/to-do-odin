@@ -9,17 +9,7 @@ closePopUpToDo();
 clickNewProject();//A
 closeProjectPopUp();//A
 
-//trabajando en el formulario del newArray
-    //falta enlazar el pop up con el boton de new array
-    //que desaparezca con su submit
-    //que el input se guarde en una variable para llamar un nuevo array
-    //empujar ese array a general
-    // elementos de render del array
-    //logica de que cada array que picas muestra solo su contenido
 
-
-
-    
 
 
 //1 DOM va a exportar a popUp el metodo de seleccionar el boton +
