@@ -1,6 +1,6 @@
 import { notesInput, titleInput, submitBtn, projectName, submitBtnA, dueDate, renderProject, renderToDo } from "./DOM";
 import { generalTodo, Todo } from "./createTodo";
-import { parseISO } from 'date-fns'
+import { parseISO, format } from 'date-fns'
 
 
 //creates a new to do when you click submit, it gets pushed to the generalTodo array
@@ -10,8 +10,9 @@ function getInputValues(event){
     let newTitle = titleInput.value;
     let newNotes = notesInput.value;
     let newDate = dueDate.value;
-    let formatDate = parseISO(newDate);
-    const dynamicTodo = new Todo (newTitle, newNotes, newDate);
+    let parseDate = parseISO(newDate);
+    let formatDate = format(parseDate, 'PPPP')
+    const dynamicTodo = new Todo (newTitle, newNotes, formatDate);
     console.log(formatDate);
     generalTodo.push(dynamicTodo);
     renderToDo(dynamicTodo);
