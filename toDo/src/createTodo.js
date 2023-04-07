@@ -11,12 +11,13 @@ export class Todo {
 
 export const projectArrays = [];
 export const generalTodo = [];
+export const cooking = [];
 export const done = [];
 
 projectArrays.push(generalTodo, done);
 
-export const prueba1 = new Todo ('prueba', 'nueva prueba');
-export const prueba2 = new Todo ('prueba 2', 'ver como funciona');
+export const prueba1 = new Todo ('go to carwash', 'try new service for interiors');
+export const prueba2 = new Todo ('buy eggs', 'remember they are expensive now');
 generalTodo.push(prueba1, prueba2);
 
 
@@ -27,3 +28,5 @@ export function renderTDList (){
 
 
 renderDefaultProjects(generalTodo, 'General');
+renderDefaultProjects(cooking, 'Cooking classes');
+renderDefaultProjects(done, 'Done');
