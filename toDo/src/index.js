@@ -6,8 +6,8 @@ import { renderTDList } from "./createTodo";
 renderTDList();
 clickNewToDo();
 closePopUpToDo();
-clickNewProject();//A
-closeProjectPopUp();//A
+clickNewProject();
+closeProjectPopUp();
 
 
 

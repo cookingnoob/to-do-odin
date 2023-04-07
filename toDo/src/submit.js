@@ -11,9 +11,8 @@ function getInputValues(event){
     let newNotes = notesInput.value;
     let newDate = dueDate.value;
     let parseDate = parseISO(newDate);
-    let formatDate = format(parseDate, 'PPPP')
+    let formatDate = format(parseDate, 'PPPP');
     const dynamicTodo = new Todo (newTitle, newNotes, formatDate);
-    console.log(formatDate);
     generalTodo.push(dynamicTodo);
     renderToDo(dynamicTodo);
 }
