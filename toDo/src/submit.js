@@ -1,5 +1,5 @@
 import { notesInput, titleInput, submitBtn, projectName, submitBtnA, dueDate, renderProject, renderToDo } from "./DOM";
-import { generalTodo, Todo } from "./createTodo";
+import { generalTodo, Todo, projectArrays } from "./createTodo";
 import { parseISO, format } from 'date-fns'
 
 
@@ -23,7 +23,8 @@ function getProjectName(event){
     event.preventDefault();
     let projectInput = projectName.value;
     [projectInput] = []
-    generalTodo.push([projectInput]);
+    projectArrays.push([projectInput]);
     renderProject([projectInput]);
+    console.log(projectArrays)
 }
 
