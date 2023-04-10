@@ -1,5 +1,8 @@
-import { notesInput, titleInput, submitBtn, projectName, submitBtnA, dueDate, renderProject, renderToDo } from "./DOM";
-import { generalTodo, Todo, projectArrays } from "./createTodo";
+import { notesInput, titleInput, submitBtn, projectName, submitBtnA, dueDate, } from "./DOM";
+import { renderToDo } from "./renderToDo";
+import { generalTodo, projectArrays } from "./toDoArrays";
+import { renderProject } from "./renderProject";
+import { Todo } from "./createTodo";
 import { parseISO, format } from 'date-fns'
 
 
@@ -13,7 +16,7 @@ function getInputValues(event){
     let parseDate = parseISO(newDate);
     let formatDate = format(parseDate, 'PPPP');
     const dynamicTodo = new Todo (newTitle, newNotes, formatDate);
-    generalTodo.push(dynamicTodo);
+    generalTodo.push(dynamicTodo); // cambiar este método a uno que cheque en que array estás
     renderToDo(dynamicTodo);
 }
 
@@ -25,6 +28,5 @@ function getProjectName(event){
     [projectInput] = []
     projectArrays.push([projectInput]);
     renderProject([projectInput]);
-    console.log(projectArrays)
 }
 

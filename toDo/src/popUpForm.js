@@ -29,8 +29,6 @@ function closeForm() {
   document.getElementById("toDoFormcontainer").style.display = "none";
 };
 
-
-
 function openProjectForm() {
     document.getElementById("arrayFormContainer").style.display = "block";
 };
