@@ -1,7 +1,7 @@
 import { notesInput, titleInput, submitBtn, projectName, submitBtnA, dueDate, } from "./DOM";
 import { renderToDo } from "./renderToDo";
 import { generalTodo, projectArrays } from "./toDoArrays";
-import { renderProject } from "./renderProject";
+import { renderProject, renderDefaultProjects } from "./renderProject";
 import { Todo } from "./createTodo";
 import { parseISO, format } from 'date-fns'
 

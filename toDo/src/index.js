@@ -3,6 +3,7 @@ import { clickNewToDo, closePopUpToDo, clickNewProject, closeProjectPopUp} from 
 import { renderTDList  } from "./createTodo";
 import { createTodo, createProject } from "./submit";
 
+
 createProject();
 createTodo();
 renderTDList();

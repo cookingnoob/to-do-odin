@@ -7,14 +7,12 @@ export function renderProject(){
     projectContainer.classList.add('projectContainer');
     projectTitle.classList.add('projectTitle');
 
-    projectTitle.textContent = `${projectName.value}`;
+    projectTitle.textContent = (`${projectName.value}`);
 
     projectContainer.append(projectTitle);
     sidebar.append(projectContainer);
-
-    return{
-        projectContainer
-    }
+    projectContainer.addEventListener('click', function click(){prueba(projectTitle.textContent)});
+  
 }
 
 export function renderDefaultProjects (array, name){
@@ -30,15 +28,12 @@ export function renderDefaultProjects (array, name){
 
     projectContainer.append(projectTitle);
     sidebar.append(projectContainer);
-
-    return{
-
-        projectContainer
-        
-    }
+    projectContainer.addEventListener('click', function click(){prueba(array.value)});
 }
 
 
-
+function prueba(title){
+    console.log(title)
+}
 // export const clickProject = (projectContainer) => projectsBox.addEventListener('click', console.log(projectContainer) )
 // export const ChooseProject = () => projectsBox.forEach( project => console.log('hola') ) 
