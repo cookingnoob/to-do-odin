@@ -1,8 +1,10 @@
 import css from "./style.css";
-import { renderElements } from "./DOM";
 import { clickNewToDo, closePopUpToDo, clickNewProject, closeProjectPopUp} from "./popUpForm";
 import { renderTDList  } from "./createTodo";
+import { createTodo, createProject } from "./submit";
 
+createProject();
+createTodo();
 renderTDList();
 clickNewToDo();
 closePopUpToDo();

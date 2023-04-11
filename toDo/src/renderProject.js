@@ -1,4 +1,4 @@
-import {sidebar} from "./DOM";
+import {sidebar, projectName} from "./DOM";
 
 export function renderProject(){
     const projectContainer = document.createElement('div');

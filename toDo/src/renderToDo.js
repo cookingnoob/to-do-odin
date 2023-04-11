@@ -1,5 +1,4 @@
 import { pruebaCheckBox } from "./checkTodo";
-import { generalTodo } from "./toDoArrays";
 import {content} from "./DOM"
 
 export function renderToDo(todo){

@@ -1,4 +1,3 @@
-import { getValues  } from "./submit";
 import { renderToDo } from "./renderToDo";
 import { generalTodo, cooking } from "./toDoArrays";
 
@@ -9,7 +8,6 @@ export class Todo {
         this.dueDate = dueDate
     }
 };
-
 
 export const prueba1 = new Todo ('go to carwash', 'try new service for interiors');
 export const prueba2 = new Todo ('buy eggs', 'remember they are expensive now');

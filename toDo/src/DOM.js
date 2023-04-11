@@ -37,4 +37,5 @@ addNewArray.textContent = 'New Array';
 
 sidebar.append(addNewArray, arrayFormContainer);
 content.appendChild(container, addNewToDo);
-export const renderElements = document.body.append(header, content, sidebar, footer, addNewToDo);
+
+const renderElements = document.body.append(header, content, sidebar, footer, addNewToDo);
