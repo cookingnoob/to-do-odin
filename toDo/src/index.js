@@ -3,7 +3,6 @@ import { clickNewToDo, closePopUpToDo, clickNewProject, closeProjectPopUp} from 
 import { renderTDList  } from "./createTodo";
 import { createTodo, createProject } from "./submit";
 
-
 createProject();
 createTodo();
 renderTDList();
@@ -14,16 +13,11 @@ closeProjectPopUp();
 
 
 
-
-
-//1 DOM va a exportar a popUp el metodo de seleccionar el boton +
-//2 popUp va a cambiar la clase de la forma para que sea visible
-//3 aparece el formulario y se rellena
-//4.1 submit toma los valores del DOM, la logica de fechas y los convierte en variables para exportar a createTodo
-//4.2 submit va a importar una funcion de popUp para cambiar la clase para que sea invisible y borre el valor de las variables
-//5 createToDo exporta un objeto para que se empuje a un array
-//6 toDoArray importa métodos del DOM para hacer un render de los elementos dentro de cada array
-// 7 hay un modulo similar a createToDo que es para crear un array, que toma solo un argumento que es el nombre del proyecto
-
-
-
+//checkTodo tiene la funcion que estará en el checkbox
+//createTodo tiene la class de Todo, los to-dos default y llama al método de render
+//dateLogic debería tener la lógica de las fechas
+//popUpForm tiene los métodos para que aparezcan y desaparezcan los formularios
+//renderProjects tiene la lógica para hacer render a los proyectos
+//renderTodo la logica para hacer el render del todo
+//submit la logica de lo que pasa cuando subes un formulario
+//toDoArrays estan los arrays de base

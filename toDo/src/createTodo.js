@@ -1,5 +1,6 @@
 import { renderToDo } from "./renderToDo";
 import { generalTodo, cooking } from "./toDoArrays";
+import { prueba } from "./renderProject";
 
 export class Todo {
     constructor (title, notes, dueDate){
@@ -18,7 +19,8 @@ export const sauce = new Todo ('Pizza sauce', 'San Marzano Tomatoes, garlic, oni
 generalTodo.push(prueba1, prueba2);
 cooking.push(oven, sauce);
 
-export function renderTDList (){
+export function renderTDList (chosenArray){
     generalTodo.forEach(todo => renderToDo(todo))
+    console.log(cooking)
 }
 

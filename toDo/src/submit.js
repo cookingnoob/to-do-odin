@@ -19,7 +19,6 @@ function getInputValues(event){
     const dynamicTodo = new Todo (newTitle, newNotes, formatDate);
     generalTodo.push(dynamicTodo); // cambiar este método a uno que cheque en que array estás
     renderToDo(dynamicTodo);
-    console.log(generalTodo);
 }
 
 //creates a new array inside the generalToDo array, in other words the project list
@@ -30,7 +29,6 @@ function getProjectName(event){
     let projectInput = projectName.value;
     [projectInput] = []
     projectArrays.push([projectInput]);
-    renderProject([projectInput]);
-    console.log(projectArrays)
+    renderProject([projectInput]); 
 }
 

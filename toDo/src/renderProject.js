@@ -1,4 +1,6 @@
 import {sidebar, projectName} from "./DOM";
+import { renderTDList } from "./createTodo";
+import { projectArrays } from "./toDoArrays";
 
 export function renderProject(){
     const projectContainer = document.createElement('div');
@@ -11,8 +13,12 @@ export function renderProject(){
 
     projectContainer.append(projectTitle);
     sidebar.append(projectContainer);
-    projectContainer.addEventListener('click', function click(){prueba(projectTitle.textContent)});
-  
+    
+    projectContainer.addEventListener('click', prueba)
+
+    return{
+        projectTitle
+    }
 }
 
 export function renderDefaultProjects (array, name){
@@ -28,12 +34,16 @@ export function renderDefaultProjects (array, name){
 
     projectContainer.append(projectTitle);
     sidebar.append(projectContainer);
-    projectContainer.addEventListener('click', function click(){prueba(array.value)});
+    
+    projectContainer.addEventListener('click', prueba)
+    return{
+        projectTitle
+    }
 }
 
-
-function prueba(title){
-    console.log(title)
+function prueba(){
+    console.log('si funciono')
 }
+
 // export const clickProject = (projectContainer) => projectsBox.addEventListener('click', console.log(projectContainer) )
 // export const ChooseProject = () => projectsBox.forEach( project => console.log('hola') ) 
