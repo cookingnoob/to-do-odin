@@ -1,5 +1,5 @@
 import { pruebaCheckBox } from "./checkTodo";
-import {content} from "./DOM"
+import {content, allToDosContainer} from "./DOM"
 
 export function renderToDo(todo){
     const toDoContainer = document.createElement('div');
@@ -17,7 +17,8 @@ export function renderToDo(todo){
    
     toDoTitle.textContent = `${todo.title}`;
     toDoNotes.textContent = `${todo.notes}`;
-    toDoDate.textContent = `${todo.dueDate}`
+    toDoDate.textContent = `${todo.dueDate}`;
+
     toDoContainer.append(toDoTitle, toDoNotes, checkBox, toDoDate);
     content.append(toDoContainer);
 

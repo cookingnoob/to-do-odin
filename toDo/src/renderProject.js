@@ -2,7 +2,7 @@ import {sidebar, projectName, content} from "./DOM";
 import { renderTDList } from "./createTodo";
 import { projectArrays } from "./toDoArrays";
 
-export function renderProject(){
+export function renderProject(array){
     const projectContainer = document.createElement('div');
     const projectTitle = document.createElement('h3');
 
@@ -15,8 +15,9 @@ export function renderProject(){
     sidebar.append(projectContainer);
     
     projectContainer.addEventListener('click', function probando(){
-       
-    })
+        content.replaceChildren()
+        renderTDList(array);
+    });
     
 }
 

@@ -26,7 +26,12 @@ justify-content: center;
     top: 0;
     left: 300px;
     border: 1px solid black;
-    
+
+}
+.toDoContainer{
+    height: 400px;
+    width: 500px;
+    background-color: aqua;
 }
 #dueDate{
 

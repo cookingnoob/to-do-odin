@@ -27,8 +27,9 @@ export const createProject = () => submitBtnA.addEventListener('click', getProje
 function getProjectName(event){ 
     event.preventDefault();
     let projectInput = projectName.value;
-    [projectInput] = []
-    projectArrays.push([projectInput]);
-    renderProject([projectInput]); 
+    projectInput = []
+    projectArrays.push(projectInput);
+    renderProject(projectInput); 
+    console.log(projectInput)
 }
 
