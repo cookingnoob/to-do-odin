@@ -2,10 +2,11 @@ import css from "./style.css";
 import { clickNewToDo, closePopUpToDo, clickNewProject, closeProjectPopUp} from "./popUpForm";
 import { renderTDList  } from "./createTodo";
 import { createTodo, createProject } from "./submit";
+import { generalTodo } from "./toDoArrays";
 
 createProject();
 createTodo();
-renderTDList();
+renderTDList(generalTodo);
 clickNewToDo();
 closePopUpToDo();
 clickNewProject();

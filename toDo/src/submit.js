@@ -17,7 +17,7 @@ function getInputValues(event){
     let parseDate = parseISO(newDate);
     let formatDate = format(parseDate, 'PPPP');
     const dynamicTodo = new Todo (newTitle, newNotes, formatDate);
-    generalTodo.push(dynamicTodo); // cambiar este método a uno que cheque en que array estás
+    generalTodo.push(dynamicTodo); 
     renderToDo(dynamicTodo);
 }
 

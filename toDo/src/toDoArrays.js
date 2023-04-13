@@ -9,4 +9,5 @@ projectArrays.push(generalTodo, cooking, done);
 
 renderDefaultProjects(generalTodo, 'generalTodo');
 renderDefaultProjects(cooking, 'cooking');
+renderDefaultProjects(done, 'Done')
 

@@ -19,8 +19,9 @@ export const sauce = new Todo ('Pizza sauce', 'San Marzano Tomatoes, garlic, oni
 generalTodo.push(prueba1, prueba2);
 cooking.push(oven, sauce);
 
+
+
 export function renderTDList (chosenArray){
-    generalTodo.forEach(todo => renderToDo(todo))
-    console.log(cooking)
+    chosenArray.forEach(todo => renderToDo(todo))
 }
 
