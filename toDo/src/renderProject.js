@@ -2,6 +2,10 @@ import {sidebar, projectName, content} from "./DOM";
 import { renderTDList } from "./createTodo";
 import { projectArrays } from "./toDoArrays";
 
+
+export let currentProject = 'hola';
+
+
 export function renderProject(array){
     const projectContainer = document.createElement('div');
     const projectTitle = document.createElement('h3');
@@ -17,7 +21,12 @@ export function renderProject(array){
     projectContainer.addEventListener('click', function probando(){
         content.replaceChildren()
         renderTDList(array);
+        currentProject = projectArrays.indexOf(array)
+        console.log(currentProject)
     });
+    
+    return{
+    }
     
 }
 
@@ -38,7 +47,15 @@ export function renderDefaultProjects (array, name){
     projectContainer.addEventListener('click', function probando(){
         content.replaceChildren()
         renderTDList(array);
+        currentProject = projectArrays.indexOf(array)
+        console.log(currentProject)
+        return{
+            currentProject
+        }
+        
     });
+
+  
 }
 
 

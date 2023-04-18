@@ -1,7 +1,7 @@
 import { notesInput, titleInput, submitBtn, projectName, submitBtnA, dueDate, } from "./DOM";
 import { renderToDo } from "./renderToDo";
 import { generalTodo, projectArrays } from "./toDoArrays";
-import { renderProject, renderDefaultProjects } from "./renderProject";
+import { renderProject, renderDefaultProjects, currentProject} from "./renderProject";
 import { Todo } from "./createTodo";
 import { parseISO, format } from 'date-fns'
 
@@ -9,7 +9,7 @@ import { parseISO, format } from 'date-fns'
 //creates a new to do when you click submit, it gets pushed to the generalTodo array
 export const createTodo = () => submitBtn.addEventListener('click', getInputValues);
 
-function getInputValues(event){
+export function getInputValues(array){
     event.preventDefault();
     let newTitle = titleInput.value;
     let newNotes = notesInput.value;
@@ -17,8 +17,9 @@ function getInputValues(event){
     let parseDate = parseISO(newDate);
     let formatDate = format(parseDate, 'PPPP');
     const dynamicTodo = new Todo (newTitle, newNotes, formatDate);
-    generalTodo.push(dynamicTodo); 
     renderToDo(dynamicTodo);
+    console.log(projectArrays[currentProject]);
+    projectArrays[currentProject].push(dynamicTodo)
 }
 
 //creates a new array inside the generalToDo array, in other words the project list
@@ -30,6 +31,6 @@ function getProjectName(event){
     projectInput = []
     projectArrays.push(projectInput);
     renderProject(projectInput); 
-    console.log(projectInput)
 }
 
+console.log(currentProject)
